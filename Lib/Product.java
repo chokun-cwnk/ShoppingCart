@@ -35,4 +35,9 @@ public class Product {
     public double getPrice(){
         return price;
     }
+
+    public String getProductId() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getProductId'");
+    }
 }
