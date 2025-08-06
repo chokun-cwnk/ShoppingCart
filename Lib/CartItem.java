@@ -2,7 +2,7 @@ package Lib;
 
 public class CartItem {
     private final Product product;
-    private final int quantity;
+    private int quantity;
 
     private void checkRep(){
         if(product == null){
@@ -26,5 +26,13 @@ public class CartItem {
 
     public int getQuantity(){
         return quantity;
+    }
+
+    public void increaseQuantity(int amount) {
+        if (amount <= 0) {
+            throw new IllegalArgumentException("Amount to increase must be greater than zero");
+        }
+        this.quantity += amount;
+        checkRep();
     }
 }

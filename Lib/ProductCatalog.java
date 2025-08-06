@@ -29,9 +29,9 @@ public class ProductCatalog {
         checkRep();
     }
 
-    public Product findByld(String productId){
+    public Product findById(String productId){
         for(Product p : products){
-            if(p.getProductId().equals(productId)){
+            if(p.getId().equals(productId)){
                 return p;
             }
         }
